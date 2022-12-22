@@ -1,0 +1,33 @@
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:name
+  pages:
+    output: true
+    permalink: /:name
+
+# # Conversion
+# markdown:    kramdown
+# highlighter: rouge
+
+# # Markdown Processors
+# kramdown:
+#   input: GFM
+#   auto_ids: true
+#   syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "standard-post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
